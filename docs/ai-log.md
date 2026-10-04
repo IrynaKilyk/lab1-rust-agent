@@ -31,3 +31,9 @@ Copilot запитав дозвіл на редагування чутливої
 
 **Висновок:**
 Перша версія manifest була неповною. Автоматична перевірка допомогла знайти пропуски, які виправлені через AI, а не вручну.
+
+## 04.10.2026 — Git
+
+- README.md, docs/architecture.md та docs/ai-log.md закомічено в гілку `develop` комітом `docs: add README, architecture and AI log`.
+- Manifest `build-engineer.agent.md` закомічено комітом `feat(agent): add build-engineer manifest`.
+- Зміни відправлено на GitHub (`git push`).
