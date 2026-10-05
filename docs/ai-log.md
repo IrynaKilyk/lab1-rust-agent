@@ -37,3 +37,15 @@ Copilot запитав дозвіл на редагування чутливої
 - README.md, docs/architecture.md та docs/ai-log.md закомічено в гілку `develop` комітом `docs: add README, architecture and AI log`.
 - Manifest `build-engineer.agent.md` закомічено комітом `feat(agent): add build-engineer manifest`.
 - Зміни відправлено на GitHub (`git push`).
+
+## 05.10.2026 — Skill project-scaffold
+
+**Запит 1:** Створити `.github/skills/project-scaffold/SKILL.md` із frontmatter і 8 розділами (призначення, входи, що створює, ідемпотентність, приклад, результат, перевірки, помилка).
+
+**Відповідь Copilot:** Створив skill з усіма розділами.
+
+**Виявлена проблема:** Розділ 8 вимагав зупинятися, якщо `Cargo.toml` уже існує, що суперечило розділу 4 (ідемпотентність) і зламало б повторний запуск `init`. Також не була зафіксована сигнатура `add`.
+
+**Запит 2 (виправлення):** Попросила Copilot пропускати крок, якщо `Cargo.toml` вже коректний, зупинятися лише при іншій назві пакета або відсутньому cargo, і вказати `pub fn add(a: i32, b: i32) -> i32`.
+
+**Рішення:** Зміни переглянула й прийняла (Keep).
